@@ -1,0 +1,26 @@
+{
+  "name": "TD",
+  "version": "1.0.0",
+  "description": "base on threejs",
+  "main": "index.js",
+  "author": "chenzhaofei",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.14.3",
+    "babel-loader": "^8.2.2",
+    "cesium": "^1.81.0",
+    "css-loader": "^5.2.4",
+    "html-webpack-plugin": "^4.5.2",
+    "mqtt": "4.2.6",
+    "style-loader": "^2.0.0",
+    "three": "^0.128.0",
+    "url-loader": "^4.1.1",
+    "webpack": "4.43.0",
+    "webpack-cli": "3",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --host 0.0.0.0 --config webpack.config.js"
+  }
+}

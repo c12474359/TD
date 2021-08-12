@@ -1,0 +1,122 @@
+/**说明*/
+TD
+创建实例
+const app = new TD(options)
+options参数说明:
+  ele:渲染容器，document|string|undefined.
+  webgl:指定渲染方式，默认根据系统自动配置，值1|2
+  render:object|undefined,渲染参数配置
+  src：string|undefined,默认undefined, 初始化主场景模型
+  scene：object|undefined,场景参数配置
+      shadowMap：是否渲染阴影，默认false
+      background:背景设置，默认 {
+          type:1,//0,默认，1增加地面纹理
+          color:'#ffffff',
+          widthSegments:20,
+          heightSegments:20,
+          receiveShadow:true
+        }
+  grid:地面网格设置
+  camera:摄像机设置
+  control：控制参数
+  lights:array,灯光配置
+
+方法：
+addLights：参数Array,灯光数组
+addLight:参数options，添加灯光配置
+create：创建模型，返回promise参数options
+      name:名称，默认随机生成
+      type:TDGeometry.MODEL|TDGeometry.TEXT|TDGeometry.CUBE|TDGeometry.CIRCLE
+      src：加载的外部模型或者字体地址
+      fileType：string|'auto',加载外部文件类型
+      //geometry参数
+      width
+      text
+      height
+      depth
+      widthSegments
+      heightSegments
+      depthSegments'
+      font
+      size
+      curveSegments
+      bevelEnabled
+      bevelThickness
+      bevelSize
+      bevelSegments
+      radius
+      segments
+      thetaStart
+      thetaLength
+      //material参数
+      color
+      isLineBasicMaterial
+      linewidth
+      linecap
+      linejoin
+      dashSize
+      gapSize
+      isLineDashedMaterial
+      scale
+      alphaMap
+      aoMap
+      aoMapIntensity
+      combine
+      envMap
+      lightMap
+      lightMapIntensity
+      map
+      morphTargets
+      reflectivity
+      refractionRatio
+      skinning
+      specular
+      specularMap
+      wireframe
+      wireframeLinecap
+      wireframeLinejoin
+      wireframeLinewidth
+      depthPacking
+      displacementMap
+      displacementScale
+      displacementBias
+      fog
+      farDistance
+      nearDistance
+      referencePosition
+      emissive
+      emissiveMap
+      emissiveIntensity
+      bumpMap
+      bumpScale
+      matcap
+      morphNormals
+      normalMap
+      normalMapType
+      normalScale
+      shininess
+      clearcoat
+      roughness
+      clearcoatRoughness
+      roughnessMap
+      defines
+      metalness
+      metalnessMap
+      gradientMap
+      clipping
+      defaultAttributeValues
+      extensions
+      fragmentShader
+      index0AttributeName
+      flatShading
+      uniforms
+      vertexColors
+      vertexShader
+      transparent
+      rotation
+      sizeAttenuation
+
+add:添加子类
+on：监听事件                  
+      
+
